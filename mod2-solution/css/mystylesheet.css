@@ -1,0 +1,100 @@
+* {
+    font-family: 'Nunito', "Segoe UI", sans-serif;
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.chicken,
+.beef,
+.sushi {
+    float: left;
+    clear: right;
+    border: 2px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(206, 202, 195);
+}
+
+.one {
+    display: block;
+    border: solid black;
+    border-width: 0 1px 2px 2px;
+    float: right;
+    width: 30%;
+}
+
+.color1 {
+    background-color: rgb(214, 134, 141);
+}
+
+.color2 {
+    background-color: rgb(201, 14, 29);
+    color: white;
+}
+
+.color3 {
+    background-color: rgb(233, 221, 168);
+}
+
+.one h3 {
+    text-align: center;
+}
+
+.chicken p,
+.beef p,
+.sushi p {
+    padding: 15px;
+    float: left;
+    text-align: justify;
+}
+
+.row {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .col-1 {
+        width: calc(33.33% - 20px);
+    }
+
+    .col-2 {
+        width: calc(33.33% - 20px);
+    }
+
+    .col-3 {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+
+    .col-1 {
+        width: calc(50% - 20px);
+    }
+
+    .col-2 {
+        width: calc(50% - 20px);
+    }
+
+    .col-3 {
+        width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    [class*=col-]{
+        width: calc(100% - 20px);
+    }
+}
