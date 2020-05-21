@@ -22,3 +22,6 @@ div.menu h1, .one h2{
 body{
     background-image: url("../images/paper.gif");
 }
+.nav-item{
+    text-align: center;
+}
